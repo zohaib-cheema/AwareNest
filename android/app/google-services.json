@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "883469593966",
+    "project_id": "autobots-67ac0",
+    "storage_bucket": "autobots-67ac0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883469593966:android:189a71f0f3f1cbd25ee57f",
+        "android_client_info": {
+          "package_name": "com.example.lsd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLR7mjtgiSzGtDJ7XNVLOgxGZr14nnM7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883469593966:android:88f96e5963cc598c5ee57f",
+        "android_client_info": {
+          "package_name": "io.flutter.plugins.firebase.messaging.example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLR7mjtgiSzGtDJ7XNVLOgxGZr14nnM7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
