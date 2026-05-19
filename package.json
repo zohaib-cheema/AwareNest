@@ -1,8 +1,27 @@
 {
+  "name": "awarenest",
+  "private": true,
+  "version": "0.1.0",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev:api": "node --env-file-if-exists=.env backend/server.js",
+    "dev:web": "npm --prefix web run dev",
+    "build": "npm --prefix web run build",
+    "start": "node --env-file-if-exists=.env backend/server.js",
+    "test": "node --test backend/test/*.test.js",
+    "format:check": "prettier --check backend web/src web/vite.config.ts web/tsconfig.json web/package.json package.json"
+  },
   "dependencies": {
-    "bcrypt": "^5.1.1",
-    "express": "^4.19.2",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
-    "sqlite3": "^5.1.7"
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
   }
 }
