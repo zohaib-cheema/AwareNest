@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: awarenest
+      POSTGRES_DB: awarenest
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run python3 ops/configure_local.py first}
+    ports:
+      - '127.0.0.1:55432:5432'
+    volumes:
+      - journal_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U awarenest -d awarenest']
+      interval: 5s
+      timeout: 5s
+      retries: 10
+volumes:
+  journal_data:
