@@ -1,0 +1,15 @@
+node_modules/
+web/dist/
+web/*.tsbuildinfo
+.env
+.env.*
+!.env.example
+backend/*.db
+backend/*.db-*
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.dart_tool/
+build/
+.flutter-plugins*
+.DS_Store
